@@ -64,16 +64,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\img\C-Sharp.png" />
+    <Content Include="Content\img\docker.png" />
+    <Content Include="Content\img\javascript.png" />
+    <Content Include="Content\img\Microsoft_.NET_logo.svg.png" />
+    <Content Include="Content\img\nodeJS.png" />
+    <Content Include="Content\img\projects-section\calculadora_freecodecamp.jpg" />
+    <Content Include="Content\img\projects-section\contador_clicks_freecodecamps.jpg" />
+    <Content Include="Content\img\projects-section\criptocurrency-prices-react-api.jpg" />
+    <Content Include="Content\img\projects-section\E-commerce_trombones.jpg" />
+    <Content Include="Content\img\projects-section\first_website_node.jpg" />
+    <Content Include="Content\img\projects-section\javascript_documentation.jpg" />
+    <Content Include="Content\img\projects-section\portfolio_example.jpg" />
+    <Content Include="Content\img\projects-section\survery_form_freeCodeCamp.jpg" />
+    <Content Include="Content\img\projects-section\taks_app_freecodecamp.jpg" />
+    <Content Include="Content\img\projects-section\terstimonial_page_freecodecamp_light.jpg" />
+    <Content Include="Content\img\react.png" />
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

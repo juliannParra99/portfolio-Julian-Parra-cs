@@ -1,0 +1,261 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+}
+/* 
+  asi ahorramos codigo */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #1A1A40;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    background-color: #e7e0e0;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+/* 
+  welcome-section */
+
+.cv-button {
+    background-color: rgba(163, 30, 59, 0.863);
+    border-radius: 4%;
+}
+
+    .cv-button:hover {
+        background-color: rgba(138, 26, 50, 0.863);
+    }
+
+    .cv-button a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.836);
+    }
+
+.welcome-section {
+    height: 100vh;
+    text-align: center;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+
+.hero {
+    padding: 3rem;
+}
+
+.welcome-section h2 {
+    font-size: 1.5rem;
+}
+
+/* 
+  about me */
+
+.about-me {
+    background-color: #31031b;
+    height: 100vh;
+    padding: 10px;
+}
+
+    .about-me .contenedor {
+        max-width: 600px;
+        text-align: center;
+    }
+
+/* my skills */
+.my-skills {
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 450px;
+    background-color: #082032;
+}
+
+.skill-item {
+    font-weight: 700;
+}
+
+/* carrusel */
+#carrusel-tecnologias .carousel {
+    max-width: 800px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.tecnologias-imagen {
+    height: 150px;
+    width: 250px; /*orginalmente tenia 150*/
+    margin: 10px 10px 20px 10px;
+    border-radius: 10%;
+}
+
+
+/* Proyectos */
+
+.proyectos-recientes {
+    padding: 40px;
+}
+
+    .proyectos-recientes img {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        display: block;
+        transition: all 0.2s ease;
+    }
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    .overlay p {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+.proyecto {
+    position: relative;
+}
+
+    .proyecto:hover img {
+        opacity: 0.2;
+    }
+
+    .proyecto:hover .overlay {
+        opacity: 1;
+    }
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.social-link {
+    list-style: none;
+}
+
+
+.ul-skills {
+    background: #a53131;
+}
+
+
+footer {
+    min-height: 500px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: #fff;
+}
+
+    .iconos-redes-sociales a:hover i {
+        color: black;
+    }
+
+.derechos-de-autor {
+    font-size: 20px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
